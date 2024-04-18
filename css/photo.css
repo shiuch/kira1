@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat-VariableFont_wght.ttf");
+}
+body {
+  font-family: Montserrat;
+  background-color: black;
+  color: white;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+::selection {
+  background-color: yellow;
+  color: black;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  height: fit-content;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  background-color: black;
+  z-index: 1;
+  font-weight: bold;
+}
+nav {
+  position: relative;
+  right: 1em;
+}
+ul {
+  text-align: right;
+}
+li {
+  display: inline-block;
+  margin-right: 1em;
+}
+main {
+  margin-top: 2.4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section {
+  padding: 0em 1em;
+  padding-bottom: 1em;
+  border: 0.06em dashed white;
+  margin: 0.6em;
+  border-radius: 1em;
+}
+img,
+h2 {
+  width: calc((100vw / 3) - 6.8em);
+}
+img {
+  border-radius: 1em;
+}
+@media (max-width: 750px) {
+  li {
+    font-size: 70%;
+  }
+  img,
+  h2 {
+    width: calc((100vw / 1) - 3.1em);
+  }
+  section {
+    margin: 0em;
+    margin-bottom: 1em;
+  }
+  main {
+    margin-top: 3em;
+  }
+}
